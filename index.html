@@ -57,6 +57,22 @@
     <link rel="icon" href="wp-content/pic/favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" href="wp-content/pic/favicon.png">
     <link rel="stylesheet" href="wp-content/themes/assets/style.css">
+
+    <style>
+        /* Forçar o efeito de Zoom Out no Banner */
+        .banner-bg {
+            animation: kenburns-out 20s infinite alternate ease-in-out !important;
+        }
+
+        @keyframes kenburns-out {
+            0% {
+                transform: scale(1.2); /* Começa maior */
+            }
+            100% {
+                transform: scale(1);   /* Termina no tamanho normal */
+            }
+        }
+    </style>
 </head>
 
 <body
